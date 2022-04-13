@@ -24,9 +24,9 @@ int main() {
 	sf::Shader shader;
 	//подключение шейдера 
 	shader.loadFromFile("RayShаder.frag", sf::Shader::Fragment);
-	//передача разрещения 
+	//передача разрещения
 	shader.setUniform("u_resolution", sf::Vector2f(w, h));
-	//позиция камеры 
+	//позиция камеры
 	shader.setUniform("u_pos", pos);
 	//главный цикл программы 
 	while (window.isOpen())
